@@ -1,0 +1,64 @@
+backbone: 
+  val: bert
+  desc: Patient steps for Early Stop.
+hidden_dim:
+  val: 512
+  desc: Sentence embedding dimension.
+kmeans_dim:
+  val: 256
+  desc: kmeans dimension.
+wait_times:
+  val: 10
+  desc: Patient steps for Early Stop.
+lr:
+  val: 0.004
+  desc: The learning rate of model.
+cluster:
+  val: kmeans
+  desc: clustering method.
+eval_batch_size:
+  val: 8
+  desc: Batch size during evaluation.
+batch_size:
+  val: 10
+  desc: Training batch size.
+freeze_bert_parameters:
+  val: 1
+  desc: Whether to freeze all parameters but the last layer.
+epoch:
+  val: 100
+  desc: Epoch of pseudo-label classification training.
+max_len:
+  val: 160
+  desc: Maximum length.
+num_pretrain:
+  val: 10
+  desc: pretrion number.
+warm_up:
+  val: 0
+  desc: Use learning rate warm-up strategy.
+IL:
+  val: 0
+  desc: incremental setting.
+p:
+  val: 1.0
+  desc: null.
+clip_grad:
+  val: 0
+  desc: null.
+ct:
+  val: 0.005
+  desc: null.
+sigmoid:
+  val: 2
+  desc: null.
+rampup_cof:
+  val: 0.05
+  desc: null.
+rampup_length:
+  val: 50
+  desc: null.
+
+
+
+
